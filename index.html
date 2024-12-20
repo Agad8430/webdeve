@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+        <nav>
+            <a href="#" class="logo"><span>C</span>ristine</a>
+            <ul id="sidemenu">
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#language">language</a></li>
+                <li><a href="#animee">Anime</a></li>
+                <li><a href="#contact">Contact</a></li>              
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>IT Student</p>
+            <h1><span>Hi, I'm </span> Cristine<br>Agad</h1>
+        </div>
+        </div>
+    </div>
+                        <!----------  About --------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Cristine Agad 4'11 from Calinginan Norte,Sevilla,Bohol. A 3rd Year student @ BISU Balilihan Campus. I'm a Youth Officer at our Chapel and a Peer Facilitator Organization (a club in BISU Balilihan)</p>
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('food')">Fav Food</p>
+                            <p class="tab-links" onclick="opentab('anime')">Fav Anime</p>
+                            <p class="tab-links" onclick="opentab('artist')">Fav song artist</p>
+                        </div>
+                        <!----------  food --------->
+                        <div class="tab-contents active-tab" id="food">
+                            <ul>
+                                <li><span>letchon</span></li>
+                                <li><span>menudo </span></li>
+                                <li><span>adobo</span></li>
+                            </ul>
+                        </div>
+                        <!----------  anime --------->
+                        <div class="tab-contents" id="anime">
+                            <ul>
+                                <li><span>weathering with you</span></li>
+                                <li><span>Spiritual Away</span></li>
+                                <li><span>Flavors of Youth</span></li>
+                            </ul>
+                        </div>
+                        <!---------- hobbies --------->
+                        <div class="tab-contents" id="artist">
+                            <ul>
+                                <li><span>Tailor Swift</span></li>
+                                <li><span>Ariana Grande</span></li>
+                                <li><span>Katy Perry</span></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        
+                        <!----------  anime --------->
+        <div id="animee">
+            <div class="fcontainer">
+                <h1 class="sub-title">Favorite Series</h1>
+                <div class="fav-list">
+                    <div class="fav">
+                        <img src="Image/poster1.png">
+                        <div class="layer">
+                            <h1>KinnPorche</h1>
+                            <p>Kinn Anakinn Theerapanyakun, the second son and de facto heir of the Theerapanyakun crime family, is attacked on his way home from making a business deal. While running for his life, he stumbles across Porsche Pachara Kittisawasd, a local bartender and underground fighter.</p>        
+                        </div>
+                    </div>
+                    <div class="fav">
+                        <img src="Image/poster2.jpg">
+                        <div class="layer">
+                        <h1>Theory of Love</h1>
+                        <p>The story is about third year film student Third (Atthaphan Phunsawat) who has feelings for his friend Khai (Jumpol Adulkittiporn) for three years with a result of painful unrequited love. Third decides to stop his feelings no matter how difficult it may be.</p>        
+                    </div>
+                    </div>
+                    <div class="fav">
+                        <img src="Image/poster3.jpg">
+                        <div class="layer">                       
+                        <h1>Together the Series</h1>
+                            <p>A student named Tine wants to get rid of a gay admirer. His friends recommend getting a pretend boyfriend, Sarawat, who plays hard to get until he finally agrees. The two become close and intense emotions soon erupted.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <!----------  Contact --------->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-center">
+                <h1 class="sub-title">Contact</h1>
+                <div class="typeofcontact">
+                    <div>
+                        <h2></i><br>Email</h2>
+                        <p>agadcristine26@gmail.com</p>
+                        
+                    </div>
+                    <div>
+                        <h2><br>Phone Number</h2>
+                        <p>09702771098</p>
+                        
+                    </div>
+                    <div>
+                        
+                        <h2><br>FaceBook</h2>
+                        <p>Rang Hae</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>&copy; 2024 Cristine Agad. All rights reserved.</p>
+    </footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link"); 
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab"); 
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemeno = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeno.style.right = "0";
+        }
+        function closemenu(){
+            sidemeno.style.right = "-500px";
+        }
+    </script>
+</body>
+</html>
